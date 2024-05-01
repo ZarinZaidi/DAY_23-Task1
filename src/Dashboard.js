@@ -8,10 +8,10 @@ function Dashboard() {
         <div>
             <Container fluid>
                 <Row>
-                    <Col sm={3}>
+                    <Col xs={12} sm={6} md={3}>
                         <Sidebar />
                     </Col>
-                    <Col sm={9}>
+                    <Col xs={12} sm={6} md={9}>
                         <MainArea />
                     </Col>
                 </Row>
