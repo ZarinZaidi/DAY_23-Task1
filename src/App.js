@@ -1,20 +1,22 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import Navigation from './Navigation';
+import Dashboard from './Dashboard';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">Dashboard</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#dashboard">Dashboard</Nav.Link>
-          <Nav.Link href="#analytics">Analytics</Nav.Link>
-          <Nav.Link href="#settings">Settings</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <div>
+
+      <Router>
+        <Navigation />
+        <h1>Hello and welcome to Day 23: Task 1</h1>
+        <Routes>
+          <Route path="/dash" element={<Dashboard />}>
+          </Route>
+        </Routes>
+      </Router>
+    </div>
   );
-}
+};
 
 export default App;

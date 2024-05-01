@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Table } from 'react-bootstrap';
-import Chart from './Chart';
 
 const MainArea = () => {
     return (
@@ -45,7 +44,6 @@ const MainArea = () => {
                     </tr>
                 </tbody>
             </Table>
-            <Chart />
         </div>
     );
 };

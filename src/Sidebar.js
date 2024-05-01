@@ -3,11 +3,13 @@ import { Card } from 'react-bootstrap';
 
 function Sidebar() {
     return (
-        <Card>
-            <Card.Body>
-                Sidebar Content
-            </Card.Body>
-        </Card>
+        <div>
+            <Card>
+                <Card.Body>
+                    Sidebar Content
+                </Card.Body>
+            </Card>
+        </div>
     );
 }
 
